@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "5efb4681-3e29-4504-bd56-59633ec61a79",
+		"name": "Api Company Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Ruta}}/api/products",
+							"host": [
+								"{{Ruta}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{Ruta}}/api/products/6094761324377f19dcba7df2",
+							"host": [
+								"{{Ruta}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"6094761324377f19dcba7df2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOTU5NzVmYjEzNTM4MmMyYzMxY2Q5YSIsImlhdCI6MTYyMDY4MTQ3MywiZXhwIjoxNjIwNzY3ODczfQ.7znCE6ViZxCUJBx__8kYyVLM8bAfug3w6zZsFHeCtjY"
+							}
+						],
+						"url": {
+							"raw": "{{Ruta}}/api/products/609478dd71e8834cb8d21303",
+							"host": [
+								"{{Ruta}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"609478dd71e8834cb8d21303"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOTU5NzVmYjEzNTM4MmMyYzMxY2Q5YSIsImlhdCI6MTYyMDY4MTQ3MywiZXhwIjoxNjIwNzY3ODczfQ.7znCE6ViZxCUJBx__8kYyVLM8bAfug3w6zZsFHeCtjY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"laptop hp\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 999.99,\r\n    \"imgURL\": \"https://mejorlaptop.com/wp-content/uploads/2021/01/HP-Notebook-de-15.6-pulgadas-mejor-laptop-hp.jpg\"\r\n}"
+						},
+						"url": {
+							"raw": "{{Ruta}}/api/products",
+							"host": [
+								"{{Ruta}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOTU5NzVmYjEzNTM4MmMyYzMxY2Q5YSIsImlhdCI6MTYyMDY4MTQ3MywiZXhwIjoxNjIwNzY3ODczfQ.7znCE6ViZxCUJBx__8kYyVLM8bAfug3w6zZsFHeCtjY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 500.99\r\n}"
+						},
+						"url": {
+							"raw": "{{Ruta}}/api/products/609478dd71e8834cb8d21303",
+							"host": [
+								"{{Ruta}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"609478dd71e8834cb8d21303"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "/users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOTk5MmRlZTg0NjIyMjRhMDg2MmU3YyIsImlhdCI6MTYyMDcxMjk0MywiZXhwIjoxNjIwNzk5MzQzfQ.guU1zr09ryWP9vJpjhOWf777j5jfXOGNoEjd7DHS3lk",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"tito2\",\r\n    \"email\": \"correo4@correo.com\",\r\n    \"password\": \"password\",\r\n    \"roles\" : [\"adminpro\", \"moderatora\"]\r\n}"
+						},
+						"url": {
+							"raw": "{{Ruta}}/api/users",
+							"host": [
+								"{{Ruta}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "/api/auth/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"tito\",\r\n    \"email\": \"correo3@correo.com\",\r\n    \"password\": \"password\",\r\n    \"roles\" : [\"admin\", \"moderator\"]\r\n}"
+						},
+						"url": {
+							"raw": "{{Ruta}}/api/auth/signup",
+							"host": [
+								"{{Ruta}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/auth/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"correo3@correo.com\",\r\n    \"password\": \"password\"\r\n}"
+						},
+						"url": {
+							"raw": "{{Ruta}}/api/auth/signin",
+							"host": [
+								"{{Ruta}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
